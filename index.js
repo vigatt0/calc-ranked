@@ -1,5 +1,5 @@
-const saldo = '2000'
-const partidasVitoriosas = 15
+const saldo = '9'
+const partidasVitoriosas = 9
 
 let nivel
 
@@ -17,4 +17,4 @@ if (partidasVitoriosas < 10) {
   nivel = 'Radiante'
 }
 
-console.log(`O Herói tem de saldo ${saldo} e está no nível ${nivel}`)
+console.log(`O Herói tem de saldo ${saldo} vitórias e está no nível ${nivel}`)
