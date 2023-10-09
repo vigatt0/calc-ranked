@@ -1,36 +1,20 @@
-const name = 'Vigatt0'
-
+const saldo = '2000'
 const partidasVitoriosas = 15
 
-let nivel = 'Ferro'
-
-let xp = 2500
+let nivel
 
 if (partidasVitoriosas < 10) {
-  nivel = 'Ferro'
-}
-
-if (xp <= 1000) {
-  console.log('Ferro')
-  nivel = 'Ferro'
-} else if (xp <= 2000) {
-  console.log('Bronze')
   nivel = 'Bronze'
-} else if (xp <= 5000) {
-  console.log('Prata')
+} else if (partidasVitoriosas < 20) {
   nivel = 'Prata'
-} else if (xp <= 7000) {
-  console.log('Ouro')
+} else if (partidasVitoriosas < 30) {
   nivel = 'Ouro'
-} else if (xp <= 9000) {
-  console.log('Platina')
+} else if (partidasVitoriosas < 40) {
   nivel = 'Platina'
-} else if (xp <= 10000) {
-  console.log('Ascendente')
+} else if (partidasVitoriosas < 50) {
   nivel = 'Ascendente'
 } else {
-  console.log('Radiante')
   nivel = 'Radiante'
 }
 
-console.log(`O Heroi de nome ${name} está no nível ${nivel}`)
+console.log(`O Herói tem de saldo ${saldo} e está no nível ${nivel}`)
